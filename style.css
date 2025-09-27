@@ -1,0 +1,179 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #ff4d4d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  height: auto;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Toggle menu for mobile */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+/* Add colored section backgrounds below */
+#overview { background-color: #ffe5e5; }
+#timeline { background-color: #e6f0ff; }
+#registration { background-color: #e6ffe6; }
+#sponsors { background-color: #fff4e6; }
+#contact { background-color: #f3e6ff; }
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section p, section a {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+section a {
+  display: inline-block;
+  background: #ff4d4d;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section a:hover {
+  background: #e60000;
+}
+
+/* Sponsors */
+.sponsor-img {
+  max-width: 150px;
+  margin: 10px;
+}
+/* Section Headings Colors */
+#overview h2 {
+    color: #ff4d4d;  /* Red for Overview */
+}
+
+#timeline h2 {
+    color: #1a73e8;  /* Blue for Timeline */
+}
+
+#registration h2 {
+    color: #28a745;  /* Green for Registration */
+}
+
+#sponsors h2 {
+    color: #ff9800;  /* Orange for Sponsors */
+}
+
+#contact h2 {
+    color: #6f42c1;  /* Purple for Contact */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+/* ----- Add hover animations here ----- */
+
+/* Buttons hover effect */
+section a {
+    transition: all 0.3s ease;
+}
+
+section a:hover {
+    background: #e60000; /* Darker red */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Sponsor images hover effect */
+.sponsor-img {
+    transition: all 0.3s ease;
+}
+
+.sponsor-img:hover {
+    transform: scale(1.1); /* Slightly enlarge */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+  .logo-img {
+    max-width: 150px;  /* Smaller on mobile */
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;  /* Smaller heading on mobile */
+  }
+}
